@@ -1,0 +1,11 @@
+require('dotenv').config();
+const tableService = require('../services/TableService');
+const express = require('express');
+const router = express.Router();
+router.get('/', (req. res) => {
+  tableService._get(process.env.dst2msNjt3B19TXJin)
+    .then(req=> req.data)
+    .then(records=> res.json(records))
+});
+
+module.exports = router;
